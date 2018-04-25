@@ -1,0 +1,12 @@
+source 'https://rubygems.org/'
+# bundle install
+
+gem 'forecast_io'
+
+gem 'geocoder'
+
+gem 'pry'
+
+gem 'stock_quote'
+
+gem 'eu_central_bank'
