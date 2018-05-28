@@ -1,0 +1,10 @@
+<h1>여기는 모든 게시물라불라</h1>
+<%= link_to '새 글 작성하기', 'board/new' %>
+<% @boards.each do |b| %>
+    <h1><%= b.title %></h1>
+    
+    <%= link_to '글보기', "/board/show/#{b.id}" %>
+    <%= link_to '삭제', "/board/destroy/#{b.id}" %>
+    <%= link_to '수정', "/board/edit/#{b.id}" %>
+
+<% end %>
